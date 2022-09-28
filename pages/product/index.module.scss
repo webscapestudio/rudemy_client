@@ -1,0 +1,33 @@
+@import "styles/vars";
+.top {
+  margin-top: 64px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.main__info {
+  margin-top: 32px;
+  .row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.row__info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 100%;
+  color: #494949;
+}
+
+.row__athor {
+  color: $accent;
+}

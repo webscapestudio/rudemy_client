@@ -1,0 +1,102 @@
+@import "styles/vars";
+
+.wrap {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  background: rgba(201, 201, 201, 0.2);
+  padding: 80px 160px;
+  width: 50%;
+}
+
+.left__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 24px;
+  color: $blackLight;
+}
+
+
+.subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: $blackLight;
+  margin-top: 8px;
+}
+
+.policy {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 16px;
+  line-height: 130%;
+
+  a {
+    color: $accent;
+  }
+}
+
+.info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info__wrap {
+  max-width: 420px;
+  width: 100%;
+}
+
+.form {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__button {
+  width: 100%;
+}
+
+.form__subtext {
+  margin-top: 12px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+
+  .social {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+
+    > svg {
+      display: block;
+      transition: all .2s ease;
+
+      &:hover {
+        stroke: $accent;
+
+        path {
+          fill: $accent;
+        }
+      }
+    }
+  }
+}
+
+
+.image__big {
+  margin-top: 70px !important;
+  display: block !important;
+
+}

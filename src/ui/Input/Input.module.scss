@@ -1,0 +1,89 @@
+@import "styles/vars";
+
+.input {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.input__element {
+  border: none;
+  width: 100%;
+  transition: all 0.2 ease;
+}
+
+.input.input__error {
+  .input__element::placeholder {
+    color: $red;
+  }
+
+  .message {
+    opacity: 1;
+    color: $red;
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+  }
+
+  .wrap {
+    border: 1px solid $red;
+  }
+
+  .icon svg {
+    stroke: $red;
+  }
+}
+.label {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  margin-bottom: 8px;
+  color: $blackLight;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid $blackLightO;
+  border-radius: 8px;
+  padding: 20px 18px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  transition: all 0.2s ease;
+}
+
+.error {
+  display: none;
+}
+.message {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.input.again .message {
+  display: block;
+  color: $blue;
+}
+
+.input.date-of-birth {
+  .message {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: $blue;
+  }
+  .message:last-of-type {
+    color: $black;
+  }
+}

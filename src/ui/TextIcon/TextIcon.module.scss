@@ -1,0 +1,28 @@
+@import "styles/vars";
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.text {
+  margin-left: 4px;
+  font-size: 14px;
+  line-height: 100%;
+  color: $blackLight;
+  margin-top: 1px;
+}
+
+.value {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 100%;
+  color: $blackLight;
+  margin-top: 1px;
+}

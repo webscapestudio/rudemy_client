@@ -1,0 +1,29 @@
+@import "styles/vars";
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid $gray;
+}
+
+.logo {
+  margin-right: 96px;
+  svg {
+    display: block;
+  }
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav_items {
+  display: flex;
+  gap: 24px;
+}
+
+.header__btn {
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+}

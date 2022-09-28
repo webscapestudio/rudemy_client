@@ -1,0 +1,44 @@
+@import "styles/vars";
+
+.checkbox {
+  height: 20px;
+  width: 20px;
+  border: 1px solid $black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  svg {
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: block;
+  }
+
+  &.active {
+    background: $accent;
+    border: 1px solid $accent;
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+.input {
+  display: none;
+}
+
+.wrap {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}

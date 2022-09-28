@@ -1,0 +1,129 @@
+@import "styles/vars";
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image {
+  height: 218px;
+}
+
+.inner {
+  border: 1px solid #dbdbdb;
+  border-top: none;
+  padding: 16px 24px 24px 24px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.type__wrap {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    line-height: 100%;
+    color: $blackLight;
+  }
+}
+
+.description {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 150%;
+  color: $blackLight;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.lessons {
+  margin-bottom: 8px;
+}
+
+.author {
+  color: $accent;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.old__price {
+  font-size: 16px;
+  line-height: 19px;
+  color: $blackLight;
+  position: relative;
+  width: fit-content;
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 4px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    height: 1px;
+    background: $blackLight;
+  }
+}
+
+.price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #f91155;
+  margin-bottom: 8px;
+}
+
+.favorite {
+  width: 48px;
+  height: 48px;
+  display: block;
+  border: 1px solid #1b1b1b;
+  border-radius: 8px;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  &.active {
+    background: $yellow;
+
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.buy {
+  flex-grow: 1;
+}

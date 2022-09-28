@@ -1,0 +1,15 @@
+.backlink {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  p {
+    font-size: 16px;
+    line-height: 100%;
+    margin-left: 10px;
+  }
+
+  svg {
+    display: block;
+    margin-bottom: 1px;
+  }
+}

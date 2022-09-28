@@ -1,0 +1,6 @@
+export { HeroProduct } from "./HeroProduct/HeroProduct"
+export { Card } from "./Card/Card"
+export { Filter } from "./Filter/Filter"
+export { Aside } from "./Aside/Aside"
+export { Footer } from "./Footer/Footer"
+export { Header } from "./Header/Header"

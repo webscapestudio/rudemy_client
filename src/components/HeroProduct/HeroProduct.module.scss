@@ -1,0 +1,45 @@
+@import "styles/vars";
+
+.card {
+  max-width: 880px;
+  background: $white;
+  width: 100%;
+  display: flex;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.left {
+  max-width: 503px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.info {
+  padding: 24px 24px 24px 16px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #1b1b1b;
+}
+
+.info__row {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: space-between;
+}
+
+.description {
+  font-size: 16px;
+  margin-top: 16px;
+  color: $blackLight;
+}
+
+.bottom {
+  margin-top: 24px;
+}

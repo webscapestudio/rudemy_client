@@ -1,0 +1,34 @@
+.filter {
+  max-width: 348px;
+  width: 100%;
+  margin-right: 54px;
+  position: static;
+  left: 0;
+}
+
+.filter__item {
+  margin-bottom: 32px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  li {
+    margin-bottom: 16px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.filter__item_title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.filter__item_top {
+  display: flex;
+  margin-bottom: 24px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}

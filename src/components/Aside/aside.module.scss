@@ -1,0 +1,80 @@
+@import "styles/vars";
+
+.aside {
+  max-width: 348px;
+  width: 100%;
+  margin-right: 56px;
+}
+
+.hr {
+  background: rgba(27, 27, 27, 0.1);
+  height: 1px;
+  width: 100%;
+  margin: 24px 0;
+}
+
+.link {
+  margin-bottom: 24px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.link__wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+
+  &.active {
+    svg {
+      stroke: $accent;
+    }
+    p {
+      color: $accent;
+    }
+  }
+  &:hover {
+    svg {
+      stroke: $accent;
+    }
+    p {
+      color: $accent;
+    }
+  }
+
+  svg {
+    transition: all 0.2s ease;
+    display: block;
+  }
+  p {
+    font-weight: 400;
+    transition: all 0.2s ease;
+
+    margin-left: 8px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+.user__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+}
+
+.user__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.user__info {
+  margin-left: 24px;
+
+  p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1b1b1b;
+  }
+}

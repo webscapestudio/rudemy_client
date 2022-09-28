@@ -1,0 +1,89 @@
+@import "styles/vars";
+
+.btn {
+  color: $white;
+  background-color: $fillBlue;
+  font-weight: 400;
+  padding: 15px 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  line-height: 100%;
+  border: 1px solid $fillBlue;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    background-color: $fillHBlue;
+    border: 1px solid $fillHBlue;
+  }
+
+  &.sm {
+    padding: 12px 28px;
+  }
+}
+
+.outlined {
+  border: 1px solid $fillBlue;
+  background: $white;
+  color: $text;
+  &:hover {
+    color: $white;
+    background: $fillBlue;
+    border: 1px solid $fillBlue;
+  }
+}
+
+// .header-btn.reg {
+//   color: $black;
+//   padding: 11px 27px;
+//   background-color: $white;
+//   border: 1px solid $frameBlue;
+// }
+
+// .header-btn.reg:hover {
+//   background-color: $white;
+//   border: 1px solid $frameHBlue;
+// }
+
+// .main-btn {
+//   padding: 16px 28px;
+// }
+
+// .main-btn.reg {
+//   padding: 15px 27px;
+//   color: $black;
+//   background-color: $white;
+//   border: 1px solid $frameBlue;
+// }
+
+// .main-btn.reg:hover {
+//   background-color: $white;
+//   border: 1px solid $frameHBlue;
+// }
+
+// .main-btn.disabled {
+//   color: $white;
+//   background-color: $gray;
+//   cursor: not-allowed;
+// }
+
+// .avatar-btn {
+//   padding: 11px 36px;
+//   color: $black;
+//   background-color: $white;
+//   border: 1px solid $frameBlue;
+// }
+
+// .avatar-btn:hover {
+//   padding: 11px 36px;
+//   background-color: $white;
+//   border: 1px solid $frameHBlue;
+// }
+
+// .login-btn {
+//   background-color: $red;
+// }
+
+// .login-btn:hover {
+//   background-color: $redH;
+// }
