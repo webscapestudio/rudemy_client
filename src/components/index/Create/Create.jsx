@@ -11,7 +11,9 @@ export const CreateSection = () => {
       <div className="container">
         <div className={s.create__wrap}>
           <div className={s.create__item}>
-            <Title tag="h3">Создавай, обучай, зарабатывай</Title>
+            <Title tag="h3" className={s.title}>
+              Создавай, обучай, зарабатывай
+            </Title>
             <p>
               Rudemy создана для того, что бы ты мог создавать и продвигать свои
               авторские курсы легко и эффективно. Мы разработали инновационный
@@ -30,7 +32,9 @@ export const CreateSection = () => {
             </div>
           </div>
           <div className={s.create__item}>
-            <Title tag="h3">Получай новые знания</Title>
+            <Title tag="h3" className={s.title}>
+              Получай новые знания
+            </Title>
             <p>
               Если ты хочешь получить новые знания – ты нашел нужную платформу.
               Зарегестрировавшись на rudemy, ты получишь доступ к огромному

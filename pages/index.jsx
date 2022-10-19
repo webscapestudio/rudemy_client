@@ -20,9 +20,9 @@ export default function Home() {
       </Head>
       <LandingLayout>
         <Hero />
-        {/*<CreateSection />
+        <CreateSection />
         <HowSection />
-        <PopularCourses /> */}
+        {/* <PopularCourses /> */}
 
         {/* <section className={s.how}>
           <div className="container">
