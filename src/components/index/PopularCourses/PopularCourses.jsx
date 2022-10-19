@@ -1,9 +1,10 @@
 import s from "./PopularCourses.module.scss"
-import { SliderArrow, Title, Card } from "../../../ui"
+import { SliderArrow, Title } from "../../../ui"
 import cn from "classnames"
 import { useRef } from "react"
-import { Navigation } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { Card } from "../../Card/Card"
+import { Navigation } from "swiper"
 
 export const PopularCourses = () => {
   const popularNavigationPrevRef = useRef(null)
@@ -45,24 +46,28 @@ export const PopularCourses = () => {
         </div>
 
         <div className={s.popular__slider}>
-          {/*          <Swiper
-            slidesPerView={4}
-            loop={true}
-            spaceBetween={16}
-            modules={[Navigation]}
-            navigation={{
-              prevEl: popularNavigationPrevRef.current,
-              nextEl: popularNavigationNextRef.current,
-            }}
-            onBeforeInit={(swiper) => {
-              swiper.params.navigation.prevEl = popularNavigationPrevRef.current
-              swiper.params.navigation.nextEl = popularNavigationNextRef.current
-            }}
-          >
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
-          </Swiper>*/}
+
+          <Swiper slidesPerView={4}
+                  loop={true}
+                  spaceBetween={16}
+                  modules={[Navigation]}
+                  navigation={{
+                    prevEl: popularNavigationPrevRef.current,
+                    nextEl: popularNavigationNextRef.current
+                  }}
+                  onBeforeInit={(swiper) => {
+                    swiper.params.navigation.prevEl = popularNavigationPrevRef.current
+                    swiper.params.navigation.nextEl = popularNavigationNextRef.current
+                  }}>
+              <SwiperSlide><Card /></SwiperSlide>
+              <SwiperSlide><Card /></SwiperSlide>
+              <SwiperSlide><Card /></SwiperSlide>
+              <SwiperSlide><Card /></SwiperSlide>
+              <SwiperSlide><Card /></SwiperSlide>
+              <SwiperSlide><Card /></SwiperSlide>
+              <SwiperSlide><Card /></SwiperSlide>
+              <SwiperSlide><Card /></SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </section>

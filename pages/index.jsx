@@ -23,6 +23,7 @@ export default function Home() {
         <CreateSection />
         <HowSection />
         <PopularCourses />
+
         <section className={s.how}>
           <div className="container">
             <Title>Наши преимущества</Title>
