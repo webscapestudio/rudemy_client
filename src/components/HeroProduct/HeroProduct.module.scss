@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   border: 1px solid #dbdbdb;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -14,6 +14,7 @@
   max-width: 503px;
   width: 100%;
   flex-shrink: 0;
+  height: 100%;
 }
 
 .info {
@@ -38,8 +39,76 @@
   font-size: 16px;
   margin-top: 16px;
   color: $blackLight;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 72px;
 }
 
 .bottom {
   margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.author {
+  margin-top: 8px;
+  color: $accent;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  transition: $trans;
+  &:hover {
+    color: $blueH;
+  }
+}
+
+.type {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: $accent;
+}
+
+.students {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: $blackLight;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #f91155;
+  margin-top: 4px;
+  align-self: flex-end;
+}
+
+.price__old {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: line-through;
+  color: #494949;
+  text-align: right;
+}
+@media (max-width: 1600px) {
+  .card {
+    flex-direction: column;
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .info {
+    padding: 16px 24px 24px 24px;
+  }
 }

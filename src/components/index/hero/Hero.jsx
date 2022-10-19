@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { useEffect } from "react"
 import { EffectCoverflow } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Button, Title } from "../../../ui"
@@ -6,6 +7,14 @@ import { HeroProduct } from "../../HeroProduct/HeroProduct"
 import s from "./Hero.module.scss"
 
 export const Hero = () => {
+  let coverEf = {
+    rotate: 0,
+    stretch: 800,
+    depth: 300,
+    modifier: 1,
+    slideShadows: false,
+  }
+
   return (
     <section className={s.hero}>
       <div className="container">
@@ -41,13 +50,7 @@ export const Hero = () => {
               loop={true}
               modules={[EffectCoverflow]}
               pagination={{ clickable: true, dynamicBullets: true }}
-              coverflowEffect={{
-                rotate: 0,
-                stretch: 800,
-                depth: 300,
-                modifier: 1,
-                slideShadows: false,
-              }}
+              coverflowEffect={coverEf}
             >
               <SwiperSlide>
                 <HeroProduct />
