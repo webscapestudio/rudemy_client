@@ -1,0 +1,38 @@
+@import "styles/vars";
+.create {
+  margin-top: 185px;
+}
+
+.create__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 56px;
+}
+
+.create__item {
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 56px;
+  flex-grow: 1;
+  width: 100%;
+  position: relative;
+
+  p {
+    margin-top: 24px;
+    color: $blackLight;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+.create__item_img {
+  position: absolute;
+  bottom: 12px;
+  right: 24px;
+  width: 164px;
+  height: 136px;
+}
+
+.create__item_btn {
+  margin-top: 40px;
+}

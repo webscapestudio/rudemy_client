@@ -1,3 +1,8 @@
+export { PopularCourses } from "./index/PopularCourses/PopularCourses"
+export { HowSection } from "./index/How/How"
+export { CreateSection } from "./index/Create/Create"
+export { Hero } from "./index/hero/Hero"
+export { Faq } from "./Faq/Faq"
 export { HeroProduct } from "./HeroProduct/HeroProduct"
 export { Card } from "./Card/Card"
 export { Filter } from "./Filter/Filter"

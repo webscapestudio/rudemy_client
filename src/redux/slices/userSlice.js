@@ -11,15 +11,19 @@ export const fetchLogin = createAsyncThunk("user/loginUser", async (params) => {
 export const fetchRegister = createAsyncThunk(
   "user/registerUser",
   async (params) => {
-    const { data } = await axiosInstance.post("/auth/registration", params)
-
-    return data
+    try {
+      const { data } = await axiosInstance.post("/auth/register", params)
+      return data
+    } catch (error) {
+      console.log(error.response.data.message);
+    }
   }
 )
 
 const initialState = {
   username: "",
   email: "",
+  error: '',
   isFetching: false,
   isAuth: false,
   isError: false,
@@ -44,8 +48,10 @@ export const userSlice = createSlice({
       state.isError = true
     },
 
-    [fetchRegister.fulfilled]: (state, { payload }) => {
+    [fetchRegister.fulfilled]: (state,  payload ) => {
+      console.log(payload)
       state.isAuth = true
+      state.error = payload
       state.isFetching = false
     },
     [fetchRegister.pending]: (state) => {

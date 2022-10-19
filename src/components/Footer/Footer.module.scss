@@ -1,0 +1,62 @@
+.footer {
+  margin-top: 128px;
+  border-top: 1px solid rgba(27, 27, 27, 0.1);
+  padding: 32px 0;
+}
+
+.ws {
+  font-size: 12px;
+  line-height: 14px;
+  span {
+    font-weight: 700;
+    span {
+      color: #ed1b24;
+    }
+  }
+}
+
+.copyright {
+  font-size: 12px;
+}
+.bot__inner {
+  margin-top: 28px;
+  gap: 32px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 16px;
+
+  svg {
+    display: block;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  margin-left: 100px;
+}
+
+.link {
+  color: #494949;
+  transition: all 0.2s ease;
+  &:hover {
+    color: #000;
+  }
+}

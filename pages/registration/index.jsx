@@ -44,8 +44,6 @@ export default function Registration() {
   const {
     register,
     handleSubmit,
-    watch,
-    getValues,
     formState: { errors },
   } = useForm({
     mode: "onSubmit",
@@ -53,7 +51,7 @@ export default function Registration() {
   })
   const onSubmit = (data) => {
     dispatch(fetchRegister(data))
-    console.log(data)
+    console.log(data, 'data')
   }
 
   return (
@@ -107,7 +105,7 @@ export default function Registration() {
               />
 
               <Button type="submit" className={s.form__button}>
-                Войти
+                Зарегестрироваться
               </Button>
               <p className={s.policy}>
                 Нажимая кнопку “Зарегестрироваться”, <br /> вы соглашаетесь с

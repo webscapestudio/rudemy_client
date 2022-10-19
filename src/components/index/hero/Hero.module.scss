@@ -1,0 +1,33 @@
+@import "styles/vars";
+
+.hero {
+  margin-top: 128px;
+}
+
+.hero__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.hero__left {
+  max-width: 530px;
+}
+
+.hero__text {
+  margin-top: 24px;
+  color: $blackLight;
+}
+
+.hero__left_btns {
+  display: flex;
+  margin-top: 48px;
+}
+
+.catalog__btn {
+  margin-right: 16px;
+}
+
+.hero__right {
+  max-width: 960px;
+  margin-left: auto;
+}
