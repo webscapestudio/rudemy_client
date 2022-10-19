@@ -4,8 +4,8 @@ export default function LandingLayout({ children }) {
   return (
     <>
       <Header />
-      <main>{children}</main>
-      <Footer />
+      {/* <main>{children}</main> */}
+      {/* <Footer /> */}
     </>
   )
 }

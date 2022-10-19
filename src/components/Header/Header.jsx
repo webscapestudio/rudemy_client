@@ -7,7 +7,6 @@ import Logo from "./Logo.svg"
 
 export const Header = () => {
   const user = useSelector((state) => state.user.data)
-  console.log(user)
 
   const pages = [
     { id: 1, title: "Каталог", link: "/catalog" },
@@ -52,16 +51,24 @@ export const Header = () => {
           ) : (
             <div className={s.header__btn}>
               <Link href="/login">
-                <Button size="sm">Вход</Button>
+                <a>
+                  <Button size="sm">Вход</Button>
+                </a>
               </Link>
 
               <Link href="/registration">
-                <Button size="sm" style="outlined">
-                  Регистрация
-                </Button>
+                <a>
+                  <Button size="sm" style="outlined">
+                    Регистрация
+                  </Button>
+                </a>
               </Link>
             </div>
           )}
+
+          <div className={s.burger}>
+            <span></span>
+          </div>
         </div>
       </div>
     </header>

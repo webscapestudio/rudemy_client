@@ -1,6 +1,6 @@
 .container {
   position: relative;
-        max-width: calc(1600px + 60px);
+  max-width: calc(1600px + 60px);
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -28,4 +28,30 @@
   max-width: 168px;
   width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: calc(1160px + 40px);
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: calc(940px + 30px);
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    max-width: calc(620px + 30px);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: none;
+  }
 }

@@ -7,6 +7,8 @@
 
 .logo {
   margin-right: 96px;
+  max-width: 152px;
+  width: 100%;
   svg {
     display: block;
   }
@@ -26,4 +28,76 @@
   display: flex;
   gap: 16px;
   margin-left: auto;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  .header {
+    padding: 12px 0;
+  }
+  .logo {
+    margin-right: 60px;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 12px;
+    margin-left: 16px;
+    flex-shrink: 0;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      border-radius: 2px;
+      height: 2px;
+      background: $black;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+
+    span {
+      position: absolute;
+      width: 100%;
+      border-radius: 2px;
+      height: 2px;
+      background: $black;
+      transform: translateY(-50%);
+      top: 50%;
+    }
+  }
+
+  .header__nav {
+    position: absolute;
+    left: -1000%;
+  }
+}
+
+@media (max-width: 960px) {
+  .header__btn {
+    display: none;
+  }
+
+  .logo {
+    max-width: 120px;
+    svg {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .burger {
+    margin-left: auto;
+  }
 }

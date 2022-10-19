@@ -19,18 +19,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LandingLayout>
-        <Hero />
+        {/* <Hero />
         <CreateSection />
         <HowSection />
-        <PopularCourses />
+        <PopularCourses /> */}
 
-        <section className={s.how}>
+        {/* <section className={s.how}>
           <div className="container">
             <Title>Наши преимущества</Title>
             <div className={s.how__wrap}></div>
           </div>
-        </section>
-        <Faq />
+        </section> */}
+        {/* <Faq /> */}
       </LandingLayout>
     </>
   )
