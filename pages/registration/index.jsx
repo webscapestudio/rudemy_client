@@ -3,7 +3,6 @@ import { Button, Input, LinkText, Title } from "../../src/ui"
 import Image from "next/image"
 import { useForm } from "react-hook-form"
 import { useDispatch } from "react-redux"
-import { fetchRegister } from "../../src/redux/slices/userSlice"
 import { useRouter } from "next/router"
 import VkIcon from "./vk.svg"
 import TwIcon from "./tw.svg"
@@ -51,7 +50,7 @@ export default function Registration() {
   })
   const onSubmit = (data) => {
     dispatch(fetchRegister(data))
-    console.log(data, 'data')
+    console.log(data, "data")
   }
 
   return (

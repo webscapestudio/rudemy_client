@@ -22,7 +22,7 @@ export default function Home() {
         <Hero />
         <CreateSection />
         <HowSection />
-        {/* <PopularCourses /> */}
+        <PopularCourses />
 
         {/* <section className={s.how}>
           <div className="container">

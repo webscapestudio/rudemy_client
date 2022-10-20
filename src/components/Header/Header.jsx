@@ -6,7 +6,7 @@ import s from "./Header.module.scss"
 import Logo from "./Logo.svg"
 
 export const Header = () => {
-  const user = useSelector((state) => state.user.data)
+  // const user = useSelector((state) => state.user.data)
 
   const pages = [
     { id: 1, title: "Каталог", link: "/catalog" },
@@ -36,7 +36,23 @@ export const Header = () => {
               ))}
             </ul>
           </nav>
-          {user ? (
+
+          <div className={s.header__btn}>
+            <Link href="/login">
+              <a>
+                <Button size="sm">Вход</Button>
+              </a>
+            </Link>
+
+            <Link href="/registration">
+              <a>
+                <Button size="sm" style="outlined">
+                  Регистрация
+                </Button>
+              </a>
+            </Link>
+          </div>
+          {/* {user ? (
             <div className={s.header__btn}>
               <Link href="/profile">
                 <a href="">
@@ -64,7 +80,7 @@ export const Header = () => {
                 </a>
               </Link>
             </div>
-          )}
+          )} */}
 
           <div className={s.burger}>
             <span></span>

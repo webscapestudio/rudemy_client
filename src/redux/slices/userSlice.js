@@ -1,69 +1,30 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
-import axiosInstance from "../../config/axios"
-
-export const fetchLogin = createAsyncThunk("user/loginUser", async (params) => {
-  const { data } = await axiosInstance.post("/auth/login", params)
-  const token = data.access_token
-
-  return data
-})
-
-export const fetchRegister = createAsyncThunk(
-  "user/registerUser",
-  async (params) => {
-    try {
-      const { data } = await axiosInstance.post("/auth/register", params)
-      return data
-    } catch (error) {
-      console.log(error.response.data.message)
-    }
-  }
-)
+import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
-  username: "",
-  email: "",
-  error: "",
-  isFetching: false,
-  isAuth: false,
-  isError: false,
-  errorMessage: "",
+  value: 0,
 }
 
 export const userSlice = createSlice({
-  name: "user",
+  name: "counter",
   initialState,
-  reducers: {},
-  extraReducers: {
-    [fetchLogin.fulfilled]: (state, payload) => {
-      state.isFetching = false
-      state.isSuccess = true
-      state.isAuth = true
+  reducers: {
+    increment: (state) => {
+      // Redux Toolkit allows us to write "mutating" logic in reducers. It
+      // doesn't actually mutate the state because it uses the Immer library,
+      // which detects changes to a "draft state" and produces a brand new
+      // immutable state based off those changes
+      state.value += 1
     },
-    [fetchLogin.pending]: (state) => {
-      state.isFetching = true
+    decrement: (state) => {
+      state.value -= 1
     },
-    [fetchLogin.rejected]: (state, payload) => {
-      state.isFetching = false
-      state.isError = true
-    },
-
-    [fetchRegister.fulfilled]: (state, payload) => {
-      state.isAuth = true
-      state.error = payload
-      state.isFetching = false
-    },
-    [fetchRegister.pending]: (state) => {
-      state.isFetching = true
-    },
-    [fetchRegister.rejected]: (state, payload) => {
-      state.isFetching = false
-      state.isError = payload
+    incrementByAmount: (state, action) => {
+      state.value += action.payload
     },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { t } = userSlice.actions
+export const { increment, decrement, incrementByAmount } = userSlice.actions
 
 export default userSlice.reducer
